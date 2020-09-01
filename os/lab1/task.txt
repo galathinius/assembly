@@ -1,0 +1,16 @@
+
+g++ -o myfile file.cpp
+
+./myfile small.bin
+
+
+
+
+
+
+cp small.bin toUse.bin
+
+truncate -s 1474560 small2.bin
+
+dd if=small2.bin of=small2.img
+
